@@ -17,7 +17,7 @@ export default class App extends React.Component {
 		const data = dv.rows
 
 		return (
-			<Chart forceFit height={600} data={data} padding={[0, 200, 100, 200]}>
+			<Chart forceFit height={600} data={data}>
 				<Coord type="rect" direction="LB" />
 				<Tooltip />
 				<Legend />

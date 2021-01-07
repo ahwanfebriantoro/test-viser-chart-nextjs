@@ -29,13 +29,7 @@ export default class App extends React.Component {
   render() {
     const { data } = this.props;
     return (
-      <Chart
-        forceFit
-        data={data}
-		height={700}
-        padding={[0, 100, 0, 100]}
-        scale={scale}
-      >
+      <Chart forceFit data={data} height={700} scale={scale}>
         <Tooltip showTitle={false} itemTpl={itemTpl} />
         <Legend position="right-center" offsetX={-100} />
         <Coord type="theta" radius={0.75} />

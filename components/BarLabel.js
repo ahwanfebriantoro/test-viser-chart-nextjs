@@ -87,7 +87,6 @@ export default class App extends React.Component {
 				height={500}
 				data={data}
 				scale={scale}
-				padding={[0, 200, 100, 200]}
 			>
 				<Tooltip />
 				<Axis dataKey="type" label={label} tickLine={tickLine} line={line} />

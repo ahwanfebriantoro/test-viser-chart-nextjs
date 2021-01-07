@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import styles from '../styles/Home.module.css';
+import styles from './chart.module.css';
 // import {InnerPie} from '../components/InnerPie';
 import dynamic from 'next/dynamic';
 
@@ -69,19 +69,19 @@ export default function Home() {
         <h1 className={styles.title}>
           Test viser chart using <a href="https://nextjs.org">Next.js</a>
         </h1>
-        <div style={{ width: '100%' }}>
+        <div className={styles.chartWrapper}>
           <InnerPie data={data} />
         </div>
-        <div style={{ width: '100%' }}>
+        <div className={styles.chartWrapper}>
           <BarLabel data={dataBar} />
         </div>
-        <div style={{ width: '100%' }}>
+        <div className={styles.chartWrapper}>
           <StackedBar data={dataStackLunas} />
         </div>
-        <div style={{ width: '100%' }}>
+        <div className={styles.chartWrapper}>
           <BasicLine />
         </div>
-        <div style={{ width: '100%' }}>
+        <div className={styles.chartWrapper}>
           <MultiSmoothLine />
         </div>
       </main>
