@@ -12,6 +12,13 @@ const BarLabel = dynamic(() => import('../components/BarLabel'), {
 const StackedBar = dynamic(() => import('../components/StackedBar'), {
   ssr: false
 });
+const BasicLine = dynamic(() => import('../components/BasicLine'), {
+  ssr: false
+});
+const MultiSmoothLine = dynamic(() => import('../components/MultiSmoothLine'), {
+  ssr: false
+});
+
 
 const data = [
   {
@@ -70,6 +77,12 @@ export default function Home() {
         </div>
         <div style={{ width: '100%' }}>
           <StackedBar data={dataStackLunas} />
+        </div>
+        <div style={{ width: '100%' }}>
+          <BasicLine />
+        </div>
+        <div style={{ width: '100%' }}>
+          <MultiSmoothLine />
         </div>
       </main>
     </div>
